@@ -82,6 +82,11 @@ img{
     font-size: 1.6rem;
     font-weight: 300;  
 }
+
+.has-margin-right{
+   margin-right: 5rem;
+    
+}
 /*End reusable*/
 
 /*Start header*/
@@ -156,7 +161,6 @@ li{
     width: 100%;
     height: 4px;
     border-radius: .8rem;
-
 }
 
 .bar.half{
@@ -198,6 +202,7 @@ li{
     background: linear-gradient(to top, #ffe838, #fd57bf);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+    padding: 1rem;
 }
 
 .landing-text h4{
@@ -232,7 +237,7 @@ li{
     font-weight: 300;
 }
 
-.portfolio-img {
+.profile-img {
     flex: 1;
     margin-right: 5rem;
 }
@@ -263,9 +268,67 @@ li{
     text-align: center;
 }
 
+.skill{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+}
+
+.skill h1{
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin: 2rem -2px 2rem 0;
+}
+
+.icon-container{
+    width: 10rem;
+    height: 10rem;
+    border: 3px solid #ffe838;
+    margin-bottom: 2rem;
+    display: flex;
+    transform: rotate(45deg);
+    
+}
+
+.icon-container i{
+    font-size: 5rem;
+    margin: auto;
+    transform: rotate(-45deg);
+    background: linear-gradient(to top, #ffe838, #fd57bf);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
 /*End services*/
 
 /*Start portfolio*/
+.portfolio-item{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 5rem;
+}
+
+.portfolio-item:last-child{
+    margin-bottom: 0;
+}
+
+.portfolio-img{
+    flex: 1;
+}
+
+.portfolio-description{
+    flex: 1;
+}
+
+.portfolio-description h6{
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    font-weight: 300;
+    opacity: 0.3;
+}
 /*End services*/
 
 /*Start timeline*/
