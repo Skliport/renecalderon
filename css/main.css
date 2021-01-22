@@ -34,6 +34,54 @@ img{
 /*End global*/
 
 /*Start reusable*/
+.container{
+    width: 90%;
+    max-width: 120rem;
+    height: 100%;
+    margin: 0 auto;
+    position: relative;
+}
+
+.section-heading{
+    text-align: center;
+    margin-top: 10rem;
+}
+
+.section-heading h1{
+    font-size: 3.5rem;
+    color: rgba(255, 255, 255, .3);
+    text-transform: uppercase;
+    font-weight: 300;
+    position: relative;
+    margin-bottom: 1rem;
+}
+.section-heading h1::before, 
+.section-heading h1::after{
+    content: '';
+    position: absolute;
+    bottom: -.5rem;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: rgb(255, 255, 255, 0.75);
+}
+
+.section-heading h1::before{
+    width: 10rem;
+    height: 3px;
+    border-radius: .8rem;
+}
+
+.section-heading h1::after{
+    width: 1.5rem;
+    height: 1.5rem;
+    border-radius: 100%;
+    bottom: -1rem;
+}
+
+.section-heading h6{
+    font-size: 1.6rem;
+    font-weight: 300;  
+}
 /*End reusable*/
 
 /*Start header*/
@@ -145,7 +193,7 @@ li{
 }
 
 .landing-text h1{
-    font-size: 20rem;
+    font-size: 17rem;
     font-family: 'Road Rage', sans-serif;
     background: linear-gradient(to top, #ffe838, #fd57bf);
     -webkit-background-clip: text;
@@ -153,7 +201,7 @@ li{
 }
 
 .landing-text h4{
-    font-size: 2rem;
+    font-size: 5rem;
     font-weight: 300;
 
 }
@@ -176,6 +224,7 @@ li{
 .about-heading h1{
     font-size: 10rem;
     opacity: .3;
+    
 }
 
 .about-heading h6{
@@ -185,10 +234,35 @@ li{
 
 .portfolio-img {
     flex: 1;
+    margin-right: 5rem;
+}
+
+.about-details{
+    flex: 1;
+}
+
+.social-media{
+    margin-top: 5rem;
+}
+
+.social-media i{
+    font-size: 5rem;
+    transition: color 650ms;
+    background: linear-gradient(to top, #ffe838, #fd57bf);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 /*End about*/
 
 /*Start services*/
+.my-skills{
+    margin-top: 10rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+    grid-gap: 2.5rem;
+    text-align: center;
+}
+
 /*End services*/
 
 /*Start portfolio*/
