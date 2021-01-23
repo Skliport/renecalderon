@@ -66,7 +66,7 @@ img{
     bottom: -.5rem;
     left: 50%;
     transform: translateX(-50%);
-    background-color: rgb(255, 255, 255, 0.75);
+    background-color: rgb(255, 255, 255, 1);
 }
 
 .section-heading h1::before{
@@ -177,7 +177,7 @@ li{
 }
 
 .open .bar.start{
-    transform: rotate(-450deg) translate(.8rem);
+    transform: rotate(-450deg) translateX(.8rem);
 }
 
 .bar.end{
@@ -187,7 +187,7 @@ li{
 }
 
 .open .bar.end{
-    transform: rotate(-450deg) translate(-.8rem);
+    transform: rotate(-450deg) translateX(-.8rem);
 }
 
 .landing-text{
@@ -201,7 +201,7 @@ li{
 }
 
 .landing-text h1{
-    font-size: 17rem;
+    font-size: 12rem;
     font-family: 'Road Rage', sans-serif;
     background: linear-gradient(to top, #ffe838, #fd57bf);
     -webkit-background-clip: text;
@@ -214,6 +214,21 @@ li{
     font-size: 5rem;
     font-weight: 300;
 
+}
+
+.down{
+        position: absolute;
+        width: 5rem;
+        height: 5rem;
+        top: 93%;
+        right: 49%;
+        border-radius: 100%;
+        display: flex;
+        animation: updown 1s infinite;
+}
+
+.down i{
+    font-size: 5rem;
 }
 /*End header*/
 
@@ -347,14 +362,14 @@ li{
     margin-top: 2.5rem;
     font-size: 1.5rem;
     text-transform: uppercase;
-    background: linear-gradient(to top, #ffe838, #fd57bf);
+    background: linear-gradient(to top, #FF5F6D, #FFC371);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     transition: color 650ms;
 }
 
 .portfolio-description .cta:hover{
-    background: linear-gradient(to top,  #FF5F6D, #FFC371);
+    background: linear-gradient(to top, #a18cd1, #fbc2eb);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
@@ -413,7 +428,7 @@ li{
 /*Circulo que acompra;a la fecha*/
 .timeline .date::after{
     content: '';
-    box-shadow: 0 0 0 4px #fd57bf;
+    box-shadow: 0 0 0 4px #ffffff;
     border-radius: 100%;
     left: -8rem;
     height: 1.5rem;
@@ -423,12 +438,102 @@ li{
 /*End timeline*/
 
 /*Start contact*/
+
+form{
+    width: 70%;
+    margin: 0 auto;
+}
+
+form label{
+    font-size: 1.5rem;
+}
+
+input,
+select,
+textarea{
+    width: 100%;
+    padding: 1rem;
+    margin-bottom: 15px;
+    border: none;
+    outline-color: #fd57bf;
+    background-color: #535359;
+    color: white;
+}
+
+.btn-grad {background-image: linear-gradient(to right, #fd57bf 0%, #F7BB97  51%, #DD5E89  100%)}
+.btn-grad {
+    margin-top: 10px;
+    padding: 15px 45px;
+    text-align: center;
+    text-transform: uppercase;
+    transition: 0.5s;
+    background-size: 200% auto;
+    color: white;            
+    border-radius: 10px;
+    display: block;
+   
+ }
+
+ .btn-grad:hover {
+    background-position: right center; /* change the direction of the change here */
+    color: #fff;
+    text-decoration: none;
+    cursor: pointer;
+ }
+
 /*End contact*/
 
 /*Start footer*/
+.copyright{
+    width: 100%;
+    text-align: center;
+    background-color: #16162d;
+    padding: 4rem 0 2rem 0;
+    position: relative;
+    
+}
+
+.up{
+    position: absolute;
+    width: 5rem;
+    height: 5rem;
+    top: -2.5rem;
+    right: 48.5%;
+    border-radius: 100%;
+    display: flex;
+    animation: pulse 2s infinite;
+}
+
+.up i{
+    font-size: 3rem;
+    margin: auto;
+    transition: 0.2s;
+}
+
+.up i:hover{
+    font-size: 3.5rem;
+}
 /*End footer*/
 
 /*Start animations*/
+@keyframes pulse{
+    0%{
+        box-shadow: 0 0 0 0 rgba(253, 87, 191, 0.99);
+    }
+    70%{
+        box-shadow: 0 0 0 2rem rgba(253, 87, 191, 0);
+    }
+    100%{
+        box-shadow: 0 0 0 0 rgba(253, 87, 191, 0);
+    }
+}
+@keyframes updown{
+    0%   {right: 49%; top: 93%;}
+  25%  {right: 49%; top: 93.4%;}
+  50%  {right: 49%; top: 94%;}
+  75%  {right: 49%; top: 93.6%;}
+  100% {right: 49%; top: 93%;}
+}
 /*End animations*/
 
 /*Start media queries*/
