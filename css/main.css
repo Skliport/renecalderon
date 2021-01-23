@@ -332,6 +332,12 @@ li{
     -webkit-text-fill-color: transparent;
 }
 
+.examples{
+    font-size: 1.5rem;
+    margin-top: 10px;
+    
+}
+
 /*End services*/
 
 /*Start portfolio*/
