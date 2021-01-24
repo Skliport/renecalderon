@@ -125,7 +125,7 @@ li{
 }
 
 .nav-link{
-    font-family: "Road Rage", sans-serif;
+    font-family: 'RoadRage', sans-serif;
     font-size: 5rem;
     padding: 1rem;
 }
@@ -202,11 +202,12 @@ li{
 
 .landing-text h1{
     font-size: 12rem;
-    font-family: 'Road Rage', sans-serif;
+    font-family: 'RoadRage', sans-serif;
     background: linear-gradient(to top, #ffe838, #fd57bf);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    padding: 1rem;
+    padding: 1rem 0;
+    
 }
 
 /*.landing-text h1::before{
@@ -657,6 +658,8 @@ textarea{
 
     .profile-img{
         margin: 0 0 7rem 0;
+        width: 100%;
+        height: auto;
     }
 
     .portfolio-item{
@@ -694,3 +697,10 @@ textarea{
     }
 }
 /*End media queries*/
+
+@font-face {
+    font-family: 'RoadRage';
+    font-style: normal;
+    font-weight: normal;
+    src: local('RoadRage'), url('Road_Rage.woff') format('woff');
+    }
