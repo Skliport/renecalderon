@@ -658,8 +658,7 @@ textarea{
 
     .profile-img{
         margin: 0 0 7rem 0;
-        width: 100%;
-        height: auto;
+        
     }
 
     .portfolio-item{
@@ -669,6 +668,8 @@ textarea{
     .portfolio-img{
         margin: 0 0 2rem 0;
         order: 1;
+        width: 100%;
+        height: auto;
     }
 
     .portfolio-description{
@@ -698,9 +699,13 @@ textarea{
 }
 /*End media queries*/
 
+/*Font*/
 @font-face {
     font-family: 'RoadRage';
     font-style: normal;
     font-weight: normal;
     src: local('RoadRage'), url('Road_Rage.woff') format('woff');
     }
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+/*End font*/
